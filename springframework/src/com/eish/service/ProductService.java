@@ -1,9 +1,11 @@
 package com.eish.service;
 
-import org.springframework.beans.factory.stereotype.Component;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.stereotype.Service;
 
-@Component
+@Service
 public class ProductService {
+    @Autowired
     private PromotionsService promotionsService;
 
     public PromotionsService getPromotionsService() {
